@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Memory policy lab — before and after</title>
+<style>__DEMO_CSS__</style>
+</head>
+<body>
+<main class="shell">
+<header class="hero"><div><div class="eyebrow">Persistent agent · Local experiment</div><h1>What should the agent remember<br>on run 200?</h1><p>Compare saved memory, selected context, and the resulting agent action. Every result below comes from the recorded experiment.</p></div><div class="hero-links"><a href="../docs/spec-memory-policy.md">Read the memory policy ↗</a><br><a href="experiment.json">Inspect the evidence JSON ↗</a><br><span class="chip">Synthetic data · Local tools</span></div></header>
+<div class="chain" aria-label="Memory flow"><div class="chain-card"><h2>1 · Save useful memory</h2><p>Validate its source, scope, and update history.</p></div><div class="arrow" aria-hidden="true">→</div><div class="chain-card"><h2>2 · Select this request's context</h2><p>Load applicable evidence within the input budget.</p></div><div class="arrow" aria-hidden="true">→</div><div class="chain-card"><h2>3 · Observe the agent's action</h2><p>Compare the result with an independent expectation.</p></div></div>
+<section class="controls" aria-label="Experiment controls"><div><label for="workflow">Workflow</label><select id="workflow"></select></div><div><label for="run">Recorded run</label><select id="run"></select></div><div><label for="baseline">Compare against</label><select id="baseline"></select></div></section>
+<div class="context-line"><span id="taskContext"></span><span id="evidenceContext"></span></div>
+<section class="comparison" aria-label="Agent state before and after the policy"><article class="panel before" id="before"></article><article class="panel after" id="after"></article></section>
+<section class="section"><div class="section-title"><h2>Saved memory is larger than supplied context</h2><p>Store counts include all workflows at this checkpoint.</p></div><div class="saved" id="saved"></div></section>
+<section class="section two-col"><div class="panel"><div class="panel-head"><div><div class="eyebrow">Across repeated runs</div><h2>Input growth</h2></div></div><div class="chart-wrap" id="chart"></div><div class="legend" id="legend"></div></div><div><div class="panel"><div class="panel-head"><div><div class="eyebrow">Same task · Same history</div><h2>All comparison methods</h2></div></div><div class="table-wrap" id="comparisonTable"></div></div><p class="table-subtitle">Click a baseline row to inspect its context. Overflow is recorded before model inference.</p></div></section>
+<section class="section"><div class="section-title"><h2>Watch a memory write change saved state</h2><p>Admission, duplicates, supersession, and rejected updates.</p></div><div class="panel"><div class="write-controls"><label class="visually-hidden" for="writeEvent">Memory write event</label><select id="writeEvent"></select></div><div id="writeDetail"></div></div></section>
+<section class="section" aria-label="Detailed experiment evidence">
+<details class="accordion"><summary><span>Checkpoint: before and after the agent step</span></summary><div class="accordion-content" id="checkpoints"></div></details>
+<details class="accordion" id="testsPanel"><summary><span id="testSummary">Policy checks and deliberate failures</span></summary><div class="accordion-content" id="tests"></div></details>
+<details class="accordion"><summary><span>Compaction: keep the working state small</span></summary><div class="accordion-content" id="compaction"></div></details>
+<details class="accordion"><summary><span>Learning: test a lesson before using it</span></summary><div class="accordion-content" id="evolution"></div></details>
+<details class="accordion" id="modelsPanel"><summary><span id="modelSummary">OpenAI model trials</span></summary><div class="accordion-content" id="models"></div></details>
+<details class="accordion" id="hybridPanel" open><summary><span>Hybrid retrieval: find the same meaning with different words</span></summary><div class="accordion-content" id="hybrid"></div></details>
+</section>
+<section class="section callout" id="limitations"></section>
+<section class="section source-links"><a href="../docs/spec-memory-policy.md">Book principles and policy decisions</a><a href="../docs/arch-memory-policy.svg">View the architecture</a><a href="../docs/arch-memory-policy.mmd">Editable Mermaid flowchart</a><a href="../README.md">Run this experiment again</a></section>
+<footer class="footer"><span>Saved state → selected evidence → observed action. These are separate things.</span><span id="footerEvidence"></span></footer>
+</main>
+<script id="experiment-data" type="application/json">__EXPERIMENT_JSON__</script>
+<script>__DEMO_JS__</script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+{
+  "status": "passed",
+  "checked_at": "2026-10-26T17:40:02.665Z",
+  "method": "jsdom static DOM and authored JavaScript execution in a Node VM",
+  "jsdom_version": "30.1.3",
+  "node_version": "v24.18.0",
+  "html_sha256": "b15b96775d2cdd9931a435958efdc059ffc0a37c5d2a586d114877cc32ef9aae",
+  "report_sha256": "a3742d84262458878dd9058eefa4db8e8c37f23108d135e793b96cf9cd8aa4db",
+  "report_model_trials": 0,
+  "counters": {
+    "assertions": 7679,
+    "selector_combinations": 80,
+    "table_row_clicks": 80,
+    "write_transitions": 20,
+    "model_trials": 0
+  },
+  "network_attempts": 0,
+  "errors": [],
+  "failures": [],
+  "evidence_boundary": "No browser was launched. This verifies DOM behavior and evidence binding, not visual layout, screenshots, or browser rendering."
+}

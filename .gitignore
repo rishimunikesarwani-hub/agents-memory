@@ -1,0 +1,36 @@
+# Secrets
+.env
+.env.*
+!.env.example
+
+# Python and tool caches
+.venv/
+venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.ruff_cache/
+*.egg-info/
+.vscode/
+
+# Local databases and caches
+*.sqlite
+*.db
+
+# Third-party material: keep local only
+design/
+Demo-Day/data/source/
+
+# Deck: contains personal photos and third-party branding
+presentation/
+
+# Run output: keep only summary receipts and diagrams
+Demo-Day/runs/*
+!Demo-Day/runs/*-summary.json
+!Demo-Day/runs/*.png
+memory-policy-lab/runs/history/
+memory-policy-lab/runs/learning-demo/
+
+# Office lock and autosave files
+~$*
+*\[Autosaved\]*

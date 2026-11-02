@@ -1,0 +1,147 @@
+{
+  "provider": "OpenAI",
+  "before": {
+    "version": "1.0",
+    "updated_at": "2026-10-31T07:47:44.305811Z",
+    "facts": [
+      {
+        "id": "fact_07b87d207439477f9e4d246091f1080a",
+        "content": "User prefers dark mode.",
+        "category": "preference",
+        "confidence": 0.9,
+        "lifecycle": "confirmed",
+        "needs_review": false,
+        "created_at": "2026-10-31T07:47:44.305811Z",
+        "updated_at": "2026-10-31T07:47:44.305811Z",
+        "source_thread_id": "preferences",
+        "source_message_id": "m1",
+        "evidence_span": "User stated: 'I prefer dark mode.'"
+      },
+      {
+        "id": "fact_faf4c6cd175d4a06ae63ae4a4a95365c",
+        "content": "User prefers US English.",
+        "category": "preference",
+        "confidence": 0.9,
+        "lifecycle": "confirmed",
+        "needs_review": false,
+        "created_at": "2026-10-31T07:47:44.305811Z",
+        "updated_at": "2026-10-31T07:47:44.305811Z",
+        "source_thread_id": "preferences",
+        "source_message_id": "m1",
+        "evidence_span": "User stated: 'I prefer US English.'"
+      }
+    ],
+    "user": {
+      "workContext": {
+        "summary": "",
+        "updated_at": ""
+      },
+      "personalContext": {
+        "summary": "",
+        "updated_at": ""
+      },
+      "topOfMind": {
+        "summary": "",
+        "updated_at": ""
+      }
+    },
+    "history": {
+      "recentMonths": {
+        "summary": "",
+        "updated_at": ""
+      },
+      "earlierContext": {
+        "summary": "",
+        "updated_at": ""
+      },
+      "longTermBackground": {
+        "summary": "",
+        "updated_at": ""
+      }
+    }
+  },
+  "after": {
+    "version": "1.0",
+    "updated_at": "2026-10-31T07:47:54.005258Z",
+    "facts": [
+      {
+        "id": "fact_faf4c6cd175d4a06ae63ae4a4a95365c",
+        "content": "User prefers US English.",
+        "category": "preference",
+        "confidence": 0.9,
+        "lifecycle": "confirmed",
+        "needs_review": false,
+        "created_at": "2026-10-31T07:47:44.305811Z",
+        "updated_at": "2026-10-31T07:47:44.305811Z",
+        "source_thread_id": "preferences",
+        "source_message_id": "m1",
+        "evidence_span": "User stated: 'I prefer US English.'"
+      },
+      {
+        "id": "fact_7ea79380254442eda2e4ea94153dbe5d",
+        "content": "User prefers light mode instead of dark mode.",
+        "category": "preference",
+        "confidence": 0.9,
+        "lifecycle": "confirmed",
+        "needs_review": false,
+        "created_at": "2026-10-31T07:47:54.005258Z",
+        "updated_at": "2026-10-31T07:47:54.005258Z",
+        "source_thread_id": "preferences",
+        "source_message_id": "m2",
+        "evidence_span": "User stated: 'Correction: use light mode instead of dark mode.'"
+      }
+    ],
+    "user": {
+      "workContext": {
+        "summary": "",
+        "updated_at": ""
+      },
+      "personalContext": {
+        "summary": "",
+        "updated_at": ""
+      },
+      "topOfMind": {
+        "summary": "",
+        "updated_at": ""
+      }
+    },
+    "history": {
+      "recentMonths": {
+        "summary": "",
+        "updated_at": ""
+      },
+      "earlierContext": {
+        "summary": "",
+        "updated_at": ""
+      },
+      "longTermBackground": {
+        "summary": "",
+        "updated_at": ""
+      }
+    }
+  },
+  "summary": "Historical conversation summary:\n- User initially preferred dark mode and US English.\n- AI acknowledged the preferences and offered to remember them.\n- User corrected their preference to light mode while maintaining US English.\n- AI confirmed the switch to light mode and continued to use US English.\n- AI encouraged the user to share any further adjustments or preferences.",
+  "recall_answer": "you prefer us english and light mode instead of dark mode.",
+  "supplied_contexts": [
+    {
+      "message_ids": [
+        "m1"
+      ],
+      "context": "Procedural: {\"style\": \"\", \"workflow\": \"\", \"safety\": \"\", \"task_policies\": \"\"}"
+    },
+    {
+      "message_ids": [
+        "m1",
+        "worker-15278b28220a41608071fc982057b9c0",
+        "m2"
+      ],
+      "context": "User fact [fact_faf4c6cd175d4a06ae63ae4a4a95365c]: User prefers US English.\nUser fact [fact_07b87d207439477f9e4d246091f1080a]: User prefers dark mode.\nProcedural: {\"style\": \"\", \"workflow\": \"\", \"safety\": \"\", \"task_policies\": \"\"}"
+    },
+    {
+      "message_ids": [
+        "m3"
+      ],
+      "context": "User fact [fact_faf4c6cd175d4a06ae63ae4a4a95365c]: User prefers US English.\nUser fact [fact_7ea79380254442eda2e4ea94153dbe5d]: User prefers light mode instead of dark mode.\nProcedural: {\"style\": \"\", \"workflow\": \"\", \"safety\": \"\", \"task_policies\": \"\"}"
+    }
+  ]
+}

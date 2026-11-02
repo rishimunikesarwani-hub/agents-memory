@@ -1,0 +1,33 @@
+{
+  "build_fingerprint": "2111b52f687f09293c73edc3fd069aa2b379fe532d0a315bbd355dfc323bcec7",
+  "reports": {
+    "memory": {
+      "path": "runs\\rehearsal-stable-fact-ids-memory-green.json",
+      "summary": {
+        "passed": 79,
+        "skipped": 12,
+        "total": 91,
+        "collected": 91
+      }
+    },
+    "postgres": {
+      "path": "runs\\rehearsal-stable-fact-ids-postgres-green.json",
+      "summary": {
+        "passed": 91,
+        "total": 91,
+        "collected": 91
+      }
+    },
+    "live": {
+      "path": "runs\\rehearsal-stable-fact-ids-live-green.json",
+      "summary": {
+        "passed": 5,
+        "total": 5,
+        "collected": 5
+      }
+    }
+  },
+  "unchanged_fact_identity_regression": "passed",
+  "continuous_launcher": "runs/start-continuous-preference-demo.ps1",
+  "network_recovery": "Authenticated OpenAI model listing and subsequent preference retry succeeded. The original interruption cause was not captured."
+}

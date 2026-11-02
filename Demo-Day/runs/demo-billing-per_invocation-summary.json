@@ -1,0 +1,26 @@
+﻿[
+    {
+        "turn":  1,
+        "mode":  "per_invocation",
+        "supplied":  "billing-1",
+        "before_reply":  1,
+        "known":  "{\"issue\":\"duplicate\",\"tier\":null,\"action\":null}",
+        "answer":  "I understand your concern about being charged twice. To assist you further, could you please provide me with details about the charges, such as the date and amount? This will help in addressing the issue more effectively."
+    },
+    {
+        "turn":  2,
+        "mode":  "per_invocation",
+        "supplied":  "billing-2",
+        "before_reply":  1,
+        "known":  "{\"issue\":null,\"tier\":\"pro\",\"action\":null}",
+        "answer":  "Thank you for letting me know you\u0027re on the Pro plan! How can I assist you today with your billing or account-related questions?"
+    },
+    {
+        "turn":  3,
+        "mode":  "per_invocation",
+        "supplied":  "billing-3",
+        "before_reply":  1,
+        "known":  "{\"issue\":null,\"tier\":null,\"action\":\"refund\"}",
+        "answer":  "I understand that you\u0027re looking for a refund. However, I can\u0027t process refunds directly. I recommend reaching out to the customer service team or the support department of the service you are inquiring about for assistance with your refund request."
+    }
+]

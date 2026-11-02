@@ -1,0 +1,104 @@
+{
+  "provider": "OpenAI",
+  "backend": "PostgreSQL",
+  "chat_model": "gpt-4o-mini",
+  "org": "live-worker-ef2cf4937daf4e2981e62c93912e8f78",
+  "user": "alex",
+  "traces": [
+    {
+      "worker_called": true,
+      "worker_id": "billing",
+      "worker_mode": "per_thread",
+      "worker_namespace": "respond_billing",
+      "worker_task_namespace": "respond_billing|billing_worker:c27cdcf9-84a7-d154-688f-0430cd117071",
+      "supplied_message_ids": [
+        "m1"
+      ],
+      "restored_message_ids": [],
+      "state_message_ids": [
+        "m1"
+      ],
+      "pre_reply_count": 1,
+      "known": {
+        "issue": "duplicate",
+        "tier": null,
+        "action": null
+      },
+      "retrieved_memory_ids": [
+        "fact_73647af70772472a8874b8f96005c0e1"
+      ],
+      "memory_update": "not_due",
+      "graph": "parent",
+      "org_update": "not_requested"
+    },
+    {
+      "worker_called": true,
+      "worker_id": "billing",
+      "worker_mode": "per_thread",
+      "worker_namespace": "respond_billing",
+      "worker_task_namespace": "respond_billing|billing_worker:cfef6f3c-10c7-d745-7107-e9ed8b610b1f",
+      "supplied_message_ids": [
+        "m2"
+      ],
+      "restored_message_ids": [
+        "m1",
+        "worker-60907338c9b347a88f8aade4b0dace24"
+      ],
+      "state_message_ids": [
+        "m1",
+        "worker-60907338c9b347a88f8aade4b0dace24",
+        "m2"
+      ],
+      "pre_reply_count": 3,
+      "known": {
+        "issue": "duplicate",
+        "tier": "pro",
+        "action": null
+      },
+      "retrieved_memory_ids": [
+        "fact_73647af70772472a8874b8f96005c0e1"
+      ],
+      "memory_update": "not_due",
+      "graph": "parent",
+      "org_update": "not_requested"
+    },
+    {
+      "worker_called": true,
+      "worker_id": "billing",
+      "worker_mode": "per_thread",
+      "worker_namespace": "respond_billing",
+      "worker_task_namespace": "respond_billing|billing_worker:d7c9fd61-0401-9675-3613-eedaf60957cf",
+      "supplied_message_ids": [
+        "m3"
+      ],
+      "restored_message_ids": [
+        "m1",
+        "worker-60907338c9b347a88f8aade4b0dace24",
+        "m2",
+        "worker-b2d5b3da2df741bb93edc840af79952a"
+      ],
+      "state_message_ids": [
+        "m1",
+        "worker-60907338c9b347a88f8aade4b0dace24",
+        "m2",
+        "worker-b2d5b3da2df741bb93edc840af79952a",
+        "m3"
+      ],
+      "pre_reply_count": 5,
+      "known": {
+        "issue": "duplicate",
+        "tier": "pro",
+        "action": "refund"
+      },
+      "retrieved_memory_ids": [
+        "fact_73647af70772472a8874b8f96005c0e1"
+      ],
+      "memory_update": "not_due",
+      "graph": "parent",
+      "org_update": "not_requested"
+    }
+  ],
+  "answer": "I understand that you would like a refund for the double charge. However, I cannot process refunds directly. Please reach out to customer support for assistance with your refund request. They will be able to review your account and help you with the process.",
+  "real_api_key_recorded": false,
+  "parent_checkpoint_id": "1f1d4ff8-03e0-6a78-800a-a8584f7e5250"
+}

@@ -1,0 +1,26 @@
+flowchart TD
+    Input["Message + trusted identity + thread ID"] --> Parent["Restore parent state and merge message ID"]
+    Parent --> Route{"Slash command?"}
+    Route -- Yes --> Controls["Inspect, delete, summarize, or set style"]
+    Controls --> Return["Return result and inspection trace"]
+    Route -- No --> Supply["First delegation: history<br/>Later delegations: unseen messages"]
+    Supply --> Worker["Restore worker state and merge supplied IDs"]
+    Worker --> Retrieve["Retrieve scoped profiles, facts, episodes, and procedures"]
+    Retrieve --> Answer["OpenAI produces the worker answer"]
+    Answer --> Track["Parent records answer and delivered IDs"]
+    Track --> Due{"Memory update due?"}
+    Due -- No --> Return
+    Due -- Yes --> Propose["Separate OpenAI call proposes a memory patch"]
+    Propose --> Validate["Validate content, confidence, exact fact IDs, and admin scope"]
+    Validate --> Commit["One transaction saves profile and search copies"]
+    Commit --> Return
+    Validate -. Failure .-> Failed["Keep previous memory and report failure"]
+    Commit -. Failure .-> Failed
+    Failed --> Return
+    Parent <--> PC[("Parent checkpoints")]
+    Worker <--> WC[("Worker checkpoints")]
+    Retrieve <--> Store[("Profiles and vectors")]
+    Commit --> Store
+    PC --> PG[("PostgreSQL + pgvector<br/>Persistent Docker volume")]
+    WC --> PG
+    Store --> PG

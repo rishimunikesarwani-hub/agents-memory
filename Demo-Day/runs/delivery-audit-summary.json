@@ -1,0 +1,12 @@
+{
+  "status": "PASS",
+  "files_checked": 191,
+  "real_secret_matches": [],
+  "synthetic_marker_matches_in_evidence": [],
+  "sanitized_fixture_copies": [
+    "runs\\2026-10-31-test-openai-transport-before.py"
+  ],
+  "redaction_note": "Only the synthetic key text in an archived fixture copy was replaced. Test failures and assertions remain unchanged.",
+  "broken_local_links": [],
+  "build_fingerprint": "aeaaca5f00e24886f7536d03eb54a23d57158ba57dc9e6d3048954f9056e75b8"
+}

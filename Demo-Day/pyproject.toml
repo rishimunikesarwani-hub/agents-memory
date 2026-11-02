@@ -1,0 +1,39 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "persistent-user-memory"
+version = "0.1.0"
+description = "A local LangGraph memory service with auditable persistence boundaries."
+requires-python = ">=3.12,<3.14"
+dependencies = [
+  "langgraph>=1.0,<2",
+  "langgraph-checkpoint-postgres>=3,<4",
+  "langchain-openai>=1,<2",
+  "psycopg[binary,pool]>=3.2,<4",
+  "python-dotenv>=1,<2",
+  "pycryptodome>=3.20,<4",
+  "tiktoken>=0.9,<1",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8,<10", "pytest-json-report>=1.5,<2", "ruff>=0.11,<1"]
+
+[project.scripts]
+user-memory = "user_memory.cli:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/user_memory"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests", "evals"]
+addopts = "-ra --strict-markers"
+markers = [
+  "postgres: requires the dedicated PostgreSQL test database",
+  "live: makes billed calls to OpenAI with an explicit opt-in",
+]
+
+[tool.ruff]
+line-length = 110
+target-version = "py312"

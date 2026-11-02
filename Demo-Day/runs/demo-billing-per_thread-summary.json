@@ -1,0 +1,26 @@
+﻿[
+    {
+        "turn":  1,
+        "mode":  "per_thread",
+        "supplied":  "billing-1",
+        "before_reply":  1,
+        "known":  "{\"issue\":\"duplicate\",\"tier\":null,\"action\":null}",
+        "answer":  "I understand your concern about being charged twice. To assist you further, could you please provide more details about the charges? For example, the date of the charges and the service or product you were billed for. This information will help in addressing the issue appropriately."
+    },
+    {
+        "turn":  2,
+        "mode":  "per_thread",
+        "supplied":  "billing-2",
+        "before_reply":  3,
+        "known":  "{\"issue\":\"duplicate\",\"tier\":\"pro\",\"action\":null}",
+        "answer":  "Thank you for confirming that you\u0027re on the Pro plan. To assist you with the double charge issue, please provide the dates of the charges and any relevant transaction details. This will help in investigating the matter further."
+    },
+    {
+        "turn":  3,
+        "mode":  "per_thread",
+        "supplied":  "billing-3",
+        "before_reply":  5,
+        "known":  "{\"issue\":\"duplicate\",\"tier\":\"pro\",\"action\":\"refund\"}",
+        "answer":  "I understand that you would like a refund for the double charge. However, I am unable to process refunds directly. I recommend contacting customer support for assistance with your refund request. They will be able to help you resolve this issue."
+    }
+]

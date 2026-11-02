@@ -1,0 +1,342 @@
+﻿{
+    "org":  "demo4-89542ac14c5e4f638060395f1ef59b34",
+    "build_fingerprint":  "8251ec6854c3b2db01bb51e2a3eb035a4d75eecb04326abe3a9655465faf2cdb",
+    "summary":  [
+                    {
+                        "Mode":  "per_thread",
+                        "Counts":  "1, 3, 5",
+                        "ThirdTurnFindings":  "{\"issue\":\"duplicate\",\"tier\":\"pro\",\"action\":\"refund\"}",
+                        "Pass":  true
+                    },
+                    {
+                        "Mode":  "per_invocation",
+                        "Counts":  "1, 1, 1",
+                        "ThirdTurnFindings":  "{\"issue\":null,\"tier\":null,\"action\":\"refund\"}",
+                        "Pass":  true
+                    },
+                    {
+                        "Mode":  "stateless",
+                        "Counts":  "1, 1, 1",
+                        "ThirdTurnFindings":  "{\"issue\":null,\"tier\":null,\"action\":\"refund\"}",
+                        "Pass":  true
+                    }
+                ],
+    "rows":  [
+                 {
+                     "turn":  1,
+                     "mode":  "per_thread",
+                     "input":  "I was charged twice.",
+                     "answer":  "I understand your concern about being charged twice. To assist you further, could you please provide more details about the charges? For example, the date of the charges and the service or product you were billed for. This information will help in addressing the issue appropriately.",
+                     "trace":  {
+                                   "worker_called":  true,
+                                   "worker_id":  "billing",
+                                   "worker_mode":  "per_thread",
+                                   "worker_namespace":  "respond_billing",
+                                   "worker_task_namespace":  "respond_billing|billing_worker:8d0d07b6-5523-1be4-302d-359ce649ac62",
+                                   "supplied_message_ids":  [
+                                                                "billing-1"
+                                                            ],
+                                   "restored_message_ids":  [
+
+                                                            ],
+                                   "state_message_ids":  [
+                                                             "billing-1"
+                                                         ],
+                                   "pre_reply_count":  1,
+                                   "known":  {
+                                                 "issue":  "duplicate",
+                                                 "tier":  null,
+                                                 "action":  null
+                                             },
+                                   "retrieved_memory_ids":  [
+
+                                                            ],
+                                   "memory_update":  "not_due",
+                                   "graph":  "parent",
+                                   "org_update":  "not_requested"
+                               }
+                 },
+                 {
+                     "turn":  1,
+                     "mode":  "per_invocation",
+                     "input":  "I was charged twice.",
+                     "answer":  "I understand your concern about being charged twice. To assist you better, could you please provide more details about the charges? For example, the date of the charges and the service or product you were billed for. This information will help in addressing the issue appropriately.",
+                     "trace":  {
+                                   "worker_called":  true,
+                                   "worker_id":  "billing",
+                                   "worker_mode":  "per_invocation",
+                                   "worker_namespace":  "respond_billing:f0e85fd6-d53a-c799-3633-4c7f8a35e05c",
+                                   "worker_task_namespace":  "respond_billing:f0e85fd6-d53a-c799-3633-4c7f8a35e05c|billing_worker:77493e00-5f96-cc56-954f-e2164d61e6d8",
+                                   "supplied_message_ids":  [
+                                                                "billing-1"
+                                                            ],
+                                   "restored_message_ids":  [
+
+                                                            ],
+                                   "state_message_ids":  [
+                                                             "billing-1"
+                                                         ],
+                                   "pre_reply_count":  1,
+                                   "known":  {
+                                                 "issue":  "duplicate",
+                                                 "tier":  null,
+                                                 "action":  null
+                                             },
+                                   "retrieved_memory_ids":  [
+
+                                                            ],
+                                   "memory_update":  "not_due",
+                                   "graph":  "parent",
+                                   "org_update":  "not_requested"
+                               }
+                 },
+                 {
+                     "turn":  1,
+                     "mode":  "stateless",
+                     "input":  "I was charged twice.",
+                     "answer":  "I understand your concern about being charged twice. To assist you further, could you please provide me with the details of the charges, such as the date and amount? This will help in addressing the issue more effectively.",
+                     "trace":  {
+                                   "worker_called":  true,
+                                   "worker_id":  "billing",
+                                   "worker_mode":  "stateless",
+                                   "worker_namespace":  "respond_billing:1f8afcc8-507e-c130-6606-d140859c44ee",
+                                   "worker_task_namespace":  "respond_billing:1f8afcc8-507e-c130-6606-d140859c44ee|billing_worker:e7603388-7fa0-5432-4544-07a74f80a078",
+                                   "supplied_message_ids":  [
+                                                                "billing-1"
+                                                            ],
+                                   "restored_message_ids":  [
+
+                                                            ],
+                                   "state_message_ids":  [
+                                                             "billing-1"
+                                                         ],
+                                   "pre_reply_count":  1,
+                                   "known":  {
+                                                 "issue":  "duplicate",
+                                                 "tier":  null,
+                                                 "action":  null
+                                             },
+                                   "retrieved_memory_ids":  [
+
+                                                            ],
+                                   "memory_update":  "not_due",
+                                   "graph":  "parent",
+                                   "org_update":  "not_requested"
+                               }
+                 },
+                 {
+                     "turn":  2,
+                     "mode":  "per_thread",
+                     "input":  "I am on the Pro plan.",
+                     "answer":  "Thank you for confirming that you are on the Pro plan. To assist you with the double charge issue, please provide the dates of the charges and any relevant transaction details. This will help in investigating the matter further.",
+                     "trace":  {
+                                   "worker_called":  true,
+                                   "worker_id":  "billing",
+                                   "worker_mode":  "per_thread",
+                                   "worker_namespace":  "respond_billing",
+                                   "worker_task_namespace":  "respond_billing|billing_worker:eef53bee-9681-282e-7c20-3afb1cdf3160",
+                                   "supplied_message_ids":  [
+                                                                "billing-2"
+                                                            ],
+                                   "restored_message_ids":  [
+                                                                "billing-1",
+                                                                "worker-e42c802d9b174042a7391ea6bea14d18"
+                                                            ],
+                                   "state_message_ids":  [
+                                                             "billing-1",
+                                                             "worker-e42c802d9b174042a7391ea6bea14d18",
+                                                             "billing-2"
+                                                         ],
+                                   "pre_reply_count":  3,
+                                   "known":  {
+                                                 "issue":  "duplicate",
+                                                 "tier":  "pro",
+                                                 "action":  null
+                                             },
+                                   "retrieved_memory_ids":  [
+
+                                                            ],
+                                   "memory_update":  "not_due",
+                                   "graph":  "parent",
+                                   "org_update":  "not_requested"
+                               }
+                 },
+                 {
+                     "turn":  2,
+                     "mode":  "per_invocation",
+                     "input":  "I am on the Pro plan.",
+                     "answer":  "Thank you for letting me know that you\u0027re on the Pro plan! How can I assist you today with your billing or account-related questions?",
+                     "trace":  {
+                                   "worker_called":  true,
+                                   "worker_id":  "billing",
+                                   "worker_mode":  "per_invocation",
+                                   "worker_namespace":  "respond_billing:90d3dc26-e90c-7edd-d1d7-2f3dc950d058",
+                                   "worker_task_namespace":  "respond_billing:90d3dc26-e90c-7edd-d1d7-2f3dc950d058|billing_worker:336bbdca-6919-170c-6896-dd701d5570df",
+                                   "supplied_message_ids":  [
+                                                                "billing-2"
+                                                            ],
+                                   "restored_message_ids":  [
+
+                                                            ],
+                                   "state_message_ids":  [
+                                                             "billing-2"
+                                                         ],
+                                   "pre_reply_count":  1,
+                                   "known":  {
+                                                 "issue":  null,
+                                                 "tier":  "pro",
+                                                 "action":  null
+                                             },
+                                   "retrieved_memory_ids":  [
+
+                                                            ],
+                                   "memory_update":  "not_due",
+                                   "graph":  "parent",
+                                   "org_update":  "not_requested"
+                               }
+                 },
+                 {
+                     "turn":  2,
+                     "mode":  "stateless",
+                     "input":  "I am on the Pro plan.",
+                     "answer":  "Thank you for confirming your Pro plan subscription. How can I assist you today with your billing or account-related inquiries?",
+                     "trace":  {
+                                   "worker_called":  true,
+                                   "worker_id":  "billing",
+                                   "worker_mode":  "stateless",
+                                   "worker_namespace":  "respond_billing:bb5693c2-24a3-a855-f833-7bb91321bb62",
+                                   "worker_task_namespace":  "respond_billing:bb5693c2-24a3-a855-f833-7bb91321bb62|billing_worker:d5d8e6d6-2d04-574f-9544-660170f0a94d",
+                                   "supplied_message_ids":  [
+                                                                "billing-2"
+                                                            ],
+                                   "restored_message_ids":  [
+
+                                                            ],
+                                   "state_message_ids":  [
+                                                             "billing-2"
+                                                         ],
+                                   "pre_reply_count":  1,
+                                   "known":  {
+                                                 "issue":  null,
+                                                 "tier":  "pro",
+                                                 "action":  null
+                                             },
+                                   "retrieved_memory_ids":  [
+
+                                                            ],
+                                   "memory_update":  "not_due",
+                                   "graph":  "parent",
+                                   "org_update":  "not_requested"
+                               }
+                 },
+                 {
+                     "turn":  3,
+                     "mode":  "per_thread",
+                     "input":  "I want a refund.",
+                     "answer":  "I understand that you would like a refund for the double charge. However, I am unable to process refunds directly. I recommend contacting customer support for assistance with your refund request. They will be able to help you resolve this issue.",
+                     "trace":  {
+                                   "worker_called":  true,
+                                   "worker_id":  "billing",
+                                   "worker_mode":  "per_thread",
+                                   "worker_namespace":  "respond_billing",
+                                   "worker_task_namespace":  "respond_billing|billing_worker:eb28f529-06f6-aa38-1f4c-ef2c1078fa83",
+                                   "supplied_message_ids":  [
+                                                                "billing-3"
+                                                            ],
+                                   "restored_message_ids":  [
+                                                                "billing-1",
+                                                                "worker-e42c802d9b174042a7391ea6bea14d18",
+                                                                "billing-2",
+                                                                "worker-6832c1dbf7af437a82e44395959c51fa"
+                                                            ],
+                                   "state_message_ids":  [
+                                                             "billing-1",
+                                                             "worker-e42c802d9b174042a7391ea6bea14d18",
+                                                             "billing-2",
+                                                             "worker-6832c1dbf7af437a82e44395959c51fa",
+                                                             "billing-3"
+                                                         ],
+                                   "pre_reply_count":  5,
+                                   "known":  {
+                                                 "issue":  "duplicate",
+                                                 "tier":  "pro",
+                                                 "action":  "refund"
+                                             },
+                                   "retrieved_memory_ids":  [
+
+                                                            ],
+                                   "memory_update":  "not_due",
+                                   "graph":  "parent",
+                                   "org_update":  "not_requested"
+                               }
+                 },
+                 {
+                     "turn":  3,
+                     "mode":  "per_invocation",
+                     "input":  "I want a refund.",
+                     "answer":  "I understand that you\u0027re looking for a refund. However, I can\u0027t process refunds directly. I recommend reaching out to the customer service team or the support department of the service you are inquiring about for assistance with your refund request.",
+                     "trace":  {
+                                   "worker_called":  true,
+                                   "worker_id":  "billing",
+                                   "worker_mode":  "per_invocation",
+                                   "worker_namespace":  "respond_billing:3d80c73e-68a1-27fc-208f-228f74795d67",
+                                   "worker_task_namespace":  "respond_billing:3d80c73e-68a1-27fc-208f-228f74795d67|billing_worker:2d4187ba-7ad4-5002-06c0-0f3cf9c1517f",
+                                   "supplied_message_ids":  [
+                                                                "billing-3"
+                                                            ],
+                                   "restored_message_ids":  [
+
+                                                            ],
+                                   "state_message_ids":  [
+                                                             "billing-3"
+                                                         ],
+                                   "pre_reply_count":  1,
+                                   "known":  {
+                                                 "issue":  null,
+                                                 "tier":  null,
+                                                 "action":  "refund"
+                                             },
+                                   "retrieved_memory_ids":  [
+
+                                                            ],
+                                   "memory_update":  "not_due",
+                                   "graph":  "parent",
+                                   "org_update":  "not_requested"
+                               }
+                 },
+                 {
+                     "turn":  3,
+                     "mode":  "stateless",
+                     "input":  "I want a refund.",
+                     "answer":  "I understand that you\u0027re looking for a refund. However, I can\u0027t process refunds directly. I recommend reaching out to the customer service team or the support department of the service you are inquiring about for assistance with your refund request.",
+                     "trace":  {
+                                   "worker_called":  true,
+                                   "worker_id":  "billing",
+                                   "worker_mode":  "stateless",
+                                   "worker_namespace":  "respond_billing:2431ae2a-c7f4-f2b6-c73b-8a534110da53",
+                                   "worker_task_namespace":  "respond_billing:2431ae2a-c7f4-f2b6-c73b-8a534110da53|billing_worker:b5b61b59-f615-ba42-1ddf-5a85050c6e0f",
+                                   "supplied_message_ids":  [
+                                                                "billing-3"
+                                                            ],
+                                   "restored_message_ids":  [
+
+                                                            ],
+                                   "state_message_ids":  [
+                                                             "billing-3"
+                                                         ],
+                                   "pre_reply_count":  1,
+                                   "known":  {
+                                                 "issue":  null,
+                                                 "tier":  null,
+                                                 "action":  "refund"
+                                             },
+                                   "retrieved_memory_ids":  [
+
+                                                            ],
+                                   "memory_update":  "not_due",
+                                   "graph":  "parent",
+                                   "org_update":  "not_requested"
+                               }
+                 }
+             ]
+}

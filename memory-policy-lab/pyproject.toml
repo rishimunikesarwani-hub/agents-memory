@@ -1,0 +1,14 @@
+[project]
+name = "memory-policy-lab"
+version = "0.1.0"
+description = "Book-grounded memory policy experiment with optional OpenAI inference"
+requires-python = ">=3.11"
+dependencies = ["openai>=2.54,<3", "tiktoken>=0.13,<1"]
+
+[project.optional-dependencies]
+test = ["pytest>=8"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src", "evals"]
+addopts = "-q -p no:cacheprovider"

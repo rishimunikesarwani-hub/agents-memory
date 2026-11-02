@@ -1,0 +1,21 @@
+flowchart TD
+    Input["Message + trusted identity + thread ID"] --> Parent["Restore parent state and merge message"]
+    Parent --> Dispatch{"First billing worker call?"}
+    Dispatch -- Yes --> Brief["Supply relevant earlier messages"]
+    Dispatch -- No --> Unseen["Supply unseen messages only"]
+    Brief --> Worker["Restore worker state and merge supplied messages"]
+    Unseen --> Worker
+    Worker --> Context["Retrieve profile, facts, episodes, and procedures"]
+    Context --> Reply["Answer with source and restoration trace"]
+    Reply --> Due{"Long-term update due?"}
+    Due -- No --> Done["Return result"]
+    Due -- Yes --> Propose["Propose structured patch"]
+    Propose --> Validate["Validate scope, confidence, and exact replacements"]
+    Validate --> Commit["Commit authoritative profile and search projections"]
+    Commit --> Done
+    Parent <--> PC[("Parent checkpoints")]
+    Worker <--> WC[("Worker checkpoints")]
+    PC --> PG[("PostgreSQL + pgvector persistent volume")]
+    WC --> PG
+    Context <--> PG
+    Commit --> PG

@@ -1,0 +1,299 @@
+{
+  "recorded_at": "2026-10-26T17:42:38.571736+00:00",
+  "status": "passed",
+  "project_root": "C:\\Users\\Be Flith Rich\\My Project Folder\\Paytm Hackathon",
+  "recovery_root": "C:\\Users\\Be Flith Rich\\AppData\\Local\\Temp\\paytm-refactor-2026-10-26-4666c98b",
+  "permanent_deletions": 0,
+  "before": {
+    "files": 344,
+    "bytes": 133120404
+  },
+  "after": {
+    "files": 134,
+    "bytes_before_receipt_serialization": 36737597
+  },
+  "tests": {
+    "passed": 141,
+    "subtests_passed": 28,
+    "failures": 0,
+    "junit": "runs/verification/tests.xml"
+  },
+  "unchanged_comparison_contexts": 100,
+  "summary_unchanged": true,
+  "demo_template_extraction_byte_identical": true,
+  "demo_checks": {
+    "assertions": 7679,
+    "selector_combinations": 80,
+    "table_row_clicks": 80,
+    "write_transitions": 20,
+    "model_trials": 0
+  },
+  "links_verified": {
+    "relative_markdown": 27,
+    "design_assets": 50,
+    "demo_links": 6
+  },
+  "design_files_unchanged": 68,
+  "historical_qwen_observations_unchanged": true,
+  "historical_archive_files_verified": 35,
+  "powerpoint": {
+    "path": "presentation/always-on-pi-agents.pptx",
+    "refactor_wrote_file": false,
+    "changed_externally_during_task": true,
+    "slide_10_text_changed": true,
+    "latest_version_preserved": true,
+    "observed_sha256": "007ecc21760357a534f1d78c4dd665d2841b50c7d73241fff9ab6ec8b34f5819"
+  },
+  "live_api_calls": 0,
+  "moves": [
+    {
+      "source": "C:\\Users\\Be Flith Rich\\My Project Folder\\Paytm Hackathon\\memory-policy-lab\\runs\\qwen-baseline",
+      "destination": "C:\\Users\\Be Flith Rich\\AppData\\Local\\Temp\\paytm-refactor-2026-10-26-4666c98b\\removed-from-project\\memory-policy-lab\\runs\\qwen-baseline",
+      "files": 13,
+      "bytes": 14048398,
+      "verified": true
+    },
+    {
+      "source": "C:\\Users\\Be Flith Rich\\My Project Folder\\Paytm Hackathon\\memory-policy-lab\\runs\\before-hybrid",
+      "destination": "C:\\Users\\Be Flith Rich\\AppData\\Local\\Temp\\paytm-refactor-2026-10-26-4666c98b\\removed-from-project\\memory-policy-lab\\runs\\before-hybrid",
+      "files": 6,
+      "bytes": 14446962,
+      "verified": true
+    },
+    {
+      "source": "C:\\Users\\Be Flith Rich\\My Project Folder\\Paytm Hackathon\\memory-policy-lab\\runs\\architecture-preview.png",
+      "destination": "C:\\Users\\Be Flith Rich\\AppData\\Local\\Temp\\paytm-refactor-2026-10-26-4666c98b\\removed-from-project\\memory-policy-lab\\runs\\architecture-preview.png",
+      "files": 1,
+      "bytes": 114909,
+      "verified": true
+    },
+    {
+      "source": "C:\\Users\\Be Flith Rich\\My Project Folder\\Paytm Hackathon\\memory-policy-lab\\runs\\completion-audit.json",
+      "destination": "C:\\Users\\Be Flith Rich\\AppData\\Local\\Temp\\paytm-refactor-2026-10-26-4666c98b\\removed-from-project\\memory-policy-lab\\runs\\completion-audit.json",
+      "files": 1,
+      "bytes": 9349,
+      "verified": true
+    },
+    {
+      "source": "C:\\Users\\Be Flith Rich\\My Project Folder\\Paytm Hackathon\\memory-policy-lab\\runs\\hybrid-completion-check.json",
+      "destination": "C:\\Users\\Be Flith Rich\\AppData\\Local\\Temp\\paytm-refactor-2026-10-26-4666c98b\\removed-from-project\\memory-policy-lab\\runs\\hybrid-completion-check.json",
+      "files": 1,
+      "bytes": 4289,
+      "verified": true
+    },
+    {
+      "source": "C:\\Users\\Be Flith Rich\\My Project Folder\\Paytm Hackathon\\memory-policy-lab\\runs\\openai-migration-check.json",
+      "destination": "C:\\Users\\Be Flith Rich\\AppData\\Local\\Temp\\paytm-refactor-2026-10-26-4666c98b\\removed-from-project\\memory-policy-lab\\runs\\openai-migration-check.json",
+      "files": 1,
+      "bytes": 2825,
+      "verified": true
+    },
+    {
+      "source": "C:\\Users\\Be Flith Rich\\My Project Folder\\Paytm Hackathon\\memory-policy-lab\\runs\\hybrid-language-review.json",
+      "destination": "C:\\Users\\Be Flith Rich\\AppData\\Local\\Temp\\paytm-refactor-2026-10-26-4666c98b\\removed-from-project\\memory-policy-lab\\runs\\hybrid-language-review.json",
+      "files": 1,
+      "bytes": 1862,
+      "verified": true
+    },
+    {
+      "source": "C:\\Users\\Be Flith Rich\\My Project Folder\\Paytm Hackathon\\memory-policy-lab\\runs\\hybrid-language-review-v2.json",
+      "destination": "C:\\Users\\Be Flith Rich\\AppData\\Local\\Temp\\paytm-refactor-2026-10-26-4666c98b\\removed-from-project\\memory-policy-lab\\runs\\hybrid-language-review-v2.json",
+      "files": 1,
+      "bytes": 1600,
+      "verified": true
+    },
+    {
+      "source": "C:\\Users\\Be Flith Rich\\My Project Folder\\Paytm Hackathon\\memory-policy-lab\\runs\\language-review.json",
+      "destination": "C:\\Users\\Be Flith Rich\\AppData\\Local\\Temp\\paytm-refactor-2026-10-26-4666c98b\\removed-from-project\\memory-policy-lab\\runs\\language-review.json",
+      "files": 1,
+      "bytes": 550,
+      "verified": true
+    },
+    {
+      "source": "C:\\Users\\Be Flith Rich\\My Project Folder\\Paytm Hackathon\\memory-policy-lab\\runs\\openai-readme-language-review.json",
+      "destination": "C:\\Users\\Be Flith Rich\\AppData\\Local\\Temp\\paytm-refactor-2026-10-26-4666c98b\\removed-from-project\\memory-policy-lab\\runs\\openai-readme-language-review.json",
+      "files": 1,
+      "bytes": 923,
+      "verified": true
+    },
+    {
+      "source": "C:\\Users\\Be Flith Rich\\My Project Folder\\Paytm Hackathon\\memory-policy-lab\\runs\\openai-readme-language-review-v2.json",
+      "destination": "C:\\Users\\Be Flith Rich\\AppData\\Local\\Temp\\paytm-refactor-2026-10-26-4666c98b\\removed-from-project\\memory-policy-lab\\runs\\openai-readme-language-review-v2.json",
+      "files": 1,
+      "bytes": 532,
+      "verified": true
+    },
+    {
+      "source": "C:\\Users\\Be Flith Rich\\My Project Folder\\Paytm Hackathon\\memory-policy-lab\\runs\\model-smoke.json",
+      "destination": "C:\\Users\\Be Flith Rich\\AppData\\Local\\Temp\\paytm-refactor-2026-10-26-4666c98b\\removed-from-project\\memory-policy-lab\\runs\\model-smoke.json",
+      "files": 1,
+      "bytes": 1759,
+      "verified": true
+    },
+    {
+      "source": "C:\\Users\\Be Flith Rich\\My Project Folder\\Paytm Hackathon\\memory-policy-lab\\runs\\test-run.txt",
+      "destination": "C:\\Users\\Be Flith Rich\\AppData\\Local\\Temp\\paytm-refactor-2026-10-26-4666c98b\\removed-from-project\\memory-policy-lab\\runs\\test-run.txt",
+      "files": 1,
+      "bytes": 386,
+      "verified": true
+    },
+    {
+      "source": "C:\\Users\\Be Flith Rich\\My Project Folder\\Paytm Hackathon\\memory-policy-lab\\runs\\tests.xml",
+      "destination": "C:\\Users\\Be Flith Rich\\AppData\\Local\\Temp\\paytm-refactor-2026-10-26-4666c98b\\removed-from-project\\memory-policy-lab\\runs\\tests.xml",
+      "files": 1,
+      "bytes": 8912,
+      "verified": true
+    },
+    {
+      "source": "C:\\Users\\Be Flith Rich\\My Project Folder\\Paytm Hackathon\\memory-policy-lab\\runs\\tests-openai.xml",
+      "destination": "C:\\Users\\Be Flith Rich\\AppData\\Local\\Temp\\paytm-refactor-2026-10-26-4666c98b\\removed-from-project\\memory-policy-lab\\runs\\tests-openai.xml",
+      "files": 1,
+      "bytes": 12844,
+      "verified": true
+    },
+    {
+      "source": "C:\\Users\\Be Flith Rich\\My Project Folder\\Paytm Hackathon\\memory-policy-lab\\runs\\tests-hybrid.xml",
+      "destination": "C:\\Users\\Be Flith Rich\\AppData\\Local\\Temp\\paytm-refactor-2026-10-26-4666c98b\\removed-from-project\\memory-policy-lab\\runs\\tests-hybrid.xml",
+      "files": 1,
+      "bytes": 18833,
+      "verified": true
+    },
+    {
+      "source": "C:\\Users\\Be Flith Rich\\My Project Folder\\Paytm Hackathon\\memory-policy-lab\\data\\qwen3-tokenizer.json",
+      "destination": "C:\\Users\\Be Flith Rich\\AppData\\Local\\Temp\\paytm-refactor-2026-10-26-4666c98b\\removed-from-project\\memory-policy-lab\\data\\qwen3-tokenizer.json",
+      "files": 1,
+      "bytes": 11422654,
+      "verified": true
+    },
+    {
+      "source": "C:\\Users\\Be Flith Rich\\My Project Folder\\Paytm Hackathon\\memory-policy-lab\\data\\tokenizer-provenance.json",
+      "destination": "C:\\Users\\Be Flith Rich\\AppData\\Local\\Temp\\paytm-refactor-2026-10-26-4666c98b\\removed-from-project\\memory-policy-lab\\data\\tokenizer-provenance.json",
+      "files": 1,
+      "bytes": 386,
+      "verified": true
+    },
+    {
+      "source": "C:\\Users\\Be Flith Rich\\My Project Folder\\Paytm Hackathon\\memory-policy-lab\\runs\\model-trials.json",
+      "destination": "C:\\Users\\Be Flith Rich\\My Project Folder\\Paytm Hackathon\\memory-policy-lab\\runs\\history\\qwen-model-trials.json",
+      "files": 1,
+      "bytes": 106565,
+      "verified": true
+    },
+    {
+      "source": "C:\\Users\\Be Flith Rich\\My Project Folder\\Paytm Hackathon\\memory-policy-lab\\runs\\dom-check.json",
+      "destination": "C:\\Users\\Be Flith Rich\\My Project Folder\\Paytm Hackathon\\memory-policy-lab\\runs\\verification\\dom-check.json",
+      "files": 1,
+      "bytes": 777,
+      "verified": true
+    },
+    {
+      "source": "C:\\Users\\Be Flith Rich\\My Project Folder\\Paytm Hackathon\\memory-policy-lab\\runs\\hybrid-architecture.png",
+      "destination": "C:\\Users\\Be Flith Rich\\My Project Folder\\Paytm Hackathon\\memory-policy-lab\\runs\\verification\\architecture.png",
+      "files": 1,
+      "bytes": 190972,
+      "verified": true
+    },
+    {
+      "source": "C:\\Users\\Be Flith Rich\\My Project Folder\\Paytm Hackathon\\memory-policy-lab\\runs\\tests-refactor-before.xml",
+      "destination": "C:\\Users\\Be Flith Rich\\My Project Folder\\Paytm Hackathon\\memory-policy-lab\\runs\\verification\\tests-before.xml",
+      "files": 1,
+      "bytes": 18833,
+      "verified": true
+    },
+    {
+      "source": "C:\\Users\\Be Flith Rich\\My Project Folder\\Paytm Hackathon\\.playwright-mcp",
+      "destination": "C:\\Users\\Be Flith Rich\\AppData\\Local\\Temp\\paytm-refactor-2026-10-26-4666c98b\\removed-from-project\\.playwright-mcp",
+      "files": 3,
+      "bytes": 39754,
+      "verified": true
+    },
+    {
+      "source": "C:\\Users\\Be Flith Rich\\My Project Folder\\Paytm Hackathon\\memory-policy-lab\\runs\\.pytest-cache",
+      "destination": "C:\\Users\\Be Flith Rich\\AppData\\Local\\Temp\\paytm-refactor-2026-10-26-4666c98b\\removed-from-project\\memory-policy-lab\\runs\\.pytest-cache",
+      "files": 5,
+      "bytes": 14396,
+      "verified": true
+    },
+    {
+      "source": "C:\\Users\\Be Flith Rich\\My Project Folder\\Paytm Hackathon\\memory-policy-lab\\evals\\__pycache__",
+      "destination": "C:\\Users\\Be Flith Rich\\AppData\\Local\\Temp\\paytm-refactor-2026-10-26-4666c98b\\removed-from-project\\memory-policy-lab\\evals\\__pycache__",
+      "files": 2,
+      "bytes": 54680,
+      "verified": true
+    },
+    {
+      "source": "C:\\Users\\Be Flith Rich\\My Project Folder\\Paytm Hackathon\\memory-policy-lab\\src\\__pycache__",
+      "destination": "C:\\Users\\Be Flith Rich\\AppData\\Local\\Temp\\paytm-refactor-2026-10-26-4666c98b\\removed-from-project\\memory-policy-lab\\src\\__pycache__",
+      "files": 6,
+      "bytes": 162603,
+      "verified": true
+    },
+    {
+      "source": "C:\\Users\\Be Flith Rich\\My Project Folder\\Paytm Hackathon\\memory-policy-lab\\tests\\__pycache__",
+      "destination": "C:\\Users\\Be Flith Rich\\AppData\\Local\\Temp\\paytm-refactor-2026-10-26-4666c98b\\removed-from-project\\memory-policy-lab\\tests\\__pycache__",
+      "files": 9,
+      "bytes": 223900,
+      "verified": true
+    },
+    {
+      "source": "C:\\Users\\Be Flith Rich\\My Project Folder\\Paytm Hackathon\\presentation\\.build\\hybrid-final-check.json",
+      "destination": "C:\\Users\\Be Flith Rich\\My Project Folder\\Paytm Hackathon\\presentation\\verification\\delivery-check.json",
+      "files": 1,
+      "bytes": 1030,
+      "verified": true
+    },
+    {
+      "source": "C:\\Users\\Be Flith Rich\\My Project Folder\\Paytm Hackathon\\presentation\\.build\\hybrid-editability.json",
+      "destination": "C:\\Users\\Be Flith Rich\\My Project Folder\\Paytm Hackathon\\presentation\\verification\\editability.json",
+      "files": 1,
+      "bytes": 1983,
+      "verified": true
+    },
+    {
+      "source": "C:\\Users\\Be Flith Rich\\My Project Folder\\Paytm Hackathon\\presentation\\.build\\hybrid-reopened-text-fit.json",
+      "destination": "C:\\Users\\Be Flith Rich\\My Project Folder\\Paytm Hackathon\\presentation\\verification\\text-fit.json",
+      "files": 1,
+      "bytes": 21409,
+      "verified": true
+    },
+    {
+      "source": "C:\\Users\\Be Flith Rich\\My Project Folder\\Paytm Hackathon\\presentation\\.build\\hybrid-language-check-v2.json",
+      "destination": "C:\\Users\\Be Flith Rich\\My Project Folder\\Paytm Hackathon\\presentation\\verification\\language-check.json",
+      "files": 1,
+      "bytes": 554,
+      "verified": true
+    },
+    {
+      "source": "C:\\Users\\Be Flith Rich\\My Project Folder\\Paytm Hackathon\\presentation\\.build",
+      "destination": "C:\\Users\\Be Flith Rich\\AppData\\Local\\Temp\\paytm-refactor-2026-10-26-4666c98b\\removed-from-project\\presentation\\.build",
+      "files": 161,
+      "bytes": 57840796,
+      "verified": true
+    },
+    {
+      "source": "C:\\Users\\Be Flith Rich\\My Project Folder\\Paytm Hackathon\\presentation\\assets\\always-on-agent-architecture-v2.png",
+      "destination": "C:\\Users\\Be Flith Rich\\AppData\\Local\\Temp\\paytm-refactor-2026-10-26-4666c98b\\removed-from-project\\presentation\\assets\\always-on-agent-architecture-v2.png",
+      "files": 1,
+      "bytes": 1342458,
+      "verified": true
+    }
+  ],
+  "extra_recovery": "Generated verification bytecode moved under recovery_root/generated-during-verification.",
+  "language_review": {
+    "new_readmes_mechanical_findings": 0,
+    "meaning_review": "completed",
+    "full_dictionary_review": "incomplete"
+  },
+  "sha256": {
+    "src/experiment.py": "f6fe016f6239f55a0903267953334cca1416c89a6e1b6452e2e349dff38e7614",
+    "src/demo/template.html": "73847ab392b75d3365b09712bc2ca1c4b74f327acf4f1912dbe107d6cdc3e940",
+    "src/demo/styles.css": "9c000af78f734f55a3dce59a693e48cbbc1c76deda4f8ad234c702f1f20db004",
+    "src/demo/app.js": "958172d5f655348ea8434df92f7089f1dd634c15bae89c8f60e0dfa88e7785d0",
+    "ops/build_demo.py": "508d46b7343fa60bc7bf49e2738475fe5f710b21ab51178041dfcd73c6e35e37",
+    "ops/check-demo.cjs": "93f4cc622abdfbb922eddc38ac63bfe9909e85719d0bcfd0cf7b79ebf0c3e8f2",
+    "ops/run-demo.ps1": "5c34690f6051e7ad3c31b6aad67ac77bf0863abfe9269f449ebe6f82ea5c763e",
+    "runs/experiment.json": "a3742d84262458878dd9058eefa4db8e8c37f23108d135e793b96cf9cd8aa4db",
+    "runs/demo.html": "b15b96775d2cdd9931a435958efdc059ffc0a37c5d2a586d114877cc32ef9aae",
+    "runs/history/pre-refactor-evidence.zip": "6795e27e7b861c5471e9380ff6a8e20b8f97d4f64fc2aa58095da04ab80c2d7e"
+  }
+}

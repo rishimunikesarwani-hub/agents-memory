@@ -1,0 +1,85 @@
+%% Memory policy experiment. Proposed rules, not a universal standard.
+%% White background and pastel palette follow the user's visual reference.
+%%{init: {"theme":"base","themeVariables":{"background":"#FFFFFF","primaryTextColor":"#222222","lineColor":"#777777","edgeLabelBackground":"#FFFFFF","fontFamily":"Arial"},"flowchart":{"curve":"stepAfter"}}}%%
+flowchart TD
+    NEW["New request<br/>User + workflow + task"]:::neutral
+    RESTORE["Restore checkpoint<br/>Keep current durable memory"]:::process
+    STORE[("Persistent records<br/>Active + superseded + quarantined")]:::memory
+
+    subgraph READ["READ POLICY: build this request"]
+        SCOPE{"Authorized scope?"}:::decision
+        VALID{"Active and valid now?"}:::decision
+        REQUIRED["Protect applicable requirements<br/>Preferences + procedures + required keys"]:::context
+        RANK["Combine keyword and cosine rankings<br/>Reciprocal rank fusion"]:::process
+        VECTORS[("SQLite embedding cache<br/>OpenAI embeddings for missing vectors<br/>Offline cache miss: lexical fallback")]:::memory
+        COVER{"Required evidence present?"}:::decision
+        MUSTFIT{"Required context fits?"}:::decision
+        PACK["Pack optional records<br/>Use remaining input budget"]:::process
+        BUDGET{"Complete input fits<br/>after output reserve?"}:::decision
+        PROMPT["Selected request context<br/>Memory remains data"]:::context
+        BLOCK["Stop with a reason<br/>Missing evidence or budget"]:::neutral
+        OMIT["Exclude from this request<br/>Keep record for inspection"]:::neutral
+    end
+
+    ACT["Agent chooses an action<br/>Existing tool permissions"]:::process
+    RESULT(("Task result")):::success
+    CANDIDATE["New memory candidate<br/>Fact, preference, episode, or lesson"]:::memory
+
+    subgraph WRITE["WRITE POLICY: change durable state"]
+        AUTH{"Allowed source<br/>and scope?"}:::decision
+        CHECK{"Valid content<br/>and evidence?"}:::decision
+        LESSON{"Reflection lesson?"}:::decision
+        EVAL{"Trusted validation<br/>and evidence references?"}:::decision
+        CONFLICT["Check duplicates and conflicts<br/>Reject stale replacements"]:::process
+        ACCEPT{"Accept update?"}:::decision
+        COMMIT["One transaction<br/>Save update + status + audit"]:::process
+        REJECT["Reject or quarantine candidate<br/>Preserve accepted state"]:::neutral
+    end
+
+    AUDIT["Visible decision evidence<br/>IDs, reasons, tokens, actions, outcomes"]:::context
+    NEW --> RESTORE
+    RESTORE --> SCOPE
+    STORE --> SCOPE
+    SCOPE -->|Yes| VALID
+    SCOPE -->|No| OMIT
+    VALID -->|Yes| REQUIRED
+    VALID -->|No| OMIT
+    REQUIRED --> COVER
+    COVER -->|No| BLOCK
+    COVER -->|Yes| MUSTFIT
+    MUSTFIT -->|No| BLOCK
+    MUSTFIT -->|Yes: eligible optional records| RANK
+    VECTORS --> RANK
+    RANK --> PACK
+    PACK --> BUDGET
+    BUDGET -->|No required fit| BLOCK
+    BUDGET -->|Yes| PROMPT
+    PROMPT --> ACT --> RESULT
+    RESULT --> CANDIDATE --> AUTH
+    AUTH -->|No| REJECT
+    AUTH -->|Yes| CHECK
+    CHECK -->|No| REJECT
+    CHECK -->|Yes| LESSON
+    LESSON -->|Yes| EVAL
+    LESSON -->|No| CONFLICT
+    EVAL -->|No| REJECT
+    EVAL -->|Yes| CONFLICT
+    CONFLICT --> ACCEPT
+    ACCEPT -->|No| REJECT
+    ACCEPT -->|Yes| COMMIT
+    COMMIT --> STORE
+    OMIT -.-> AUDIT
+    BLOCK -.-> AUDIT
+    PROMPT -.-> AUDIT
+    RESULT -.-> AUDIT
+    COMMIT -.-> AUDIT
+    REJECT -.-> AUDIT
+
+    classDef neutral fill:#F5F5F5,stroke:#888888,color:#222222;
+    classDef process fill:#D9EAFB,stroke:#888888,color:#222222;
+    classDef memory fill:#FFF3CD,stroke:#888888,color:#222222;
+    classDef decision fill:#FFF3CD,stroke:#888888,color:#222222;
+    classDef context fill:#E8DDF0,stroke:#888888,color:#222222;
+    classDef success fill:#00B050,stroke:#555555,color:#111111;
+    style READ fill:#FFFFFF,stroke:#BBBBBB,color:#222222
+    style WRITE fill:#FFFFFF,stroke:#BBBBBB,color:#222222
